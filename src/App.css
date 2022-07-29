@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0px;
+    font-family: 'Kaisei HarunoUmi', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    height: 100vh;
+    background-color: #f3ede5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3{
+    text-align: center;
+    color: #2b262d;
+    text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #444;
+    text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
+    color:#c26522;
+    font-size: 3.5em;
 }
 
-.App-link {
-  color: #61dafb;
+.search-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Cuisine-types{
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+.search-form input[type="text"] {
+    width: 30%;
+    height: 1.5rem;
+    margin: 2rem;
+    margin-top: 3rem;
+    border-width: 0.5rem;
+    border-radius: 25% 10%;
+    border-color: #bbc99a;
+    font-size: 1rem;
+}
+
+.search-form input:focus{
+    outline: none;
+}
+
+.Cuisine-types label{
+    background-color: #e7c8ba;
+    border-radius: 5px;
+    padding: 2px 4px;
+    color: #aa646c;
+    border: solid 3px #aa646c;
+    margin: 3px;
+    font-size: 0.8em;
+}
+
+.Cuisine-types label:hover{
+    background-color: #aa646c;
+    border: solid 3px #e7c8ba;
+    color: #e7c8ba;
+}
+
+.search-form input[type="submit"] {
+    background-color: #bbc99a;
+    color: black;
+    font-size: 1em;
+    width: 10%;
+}
+
+.search-form input[type="submit"]:hover{
+    background-color: #2b262d;
+    color: #bbc99a;
+}
+
+.recipes{
+    margin-top: 10px;
+    width: 100vw;
+    background-color: #f3ede5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipe{
+    width: 30%;
+    background-color: #dbb5bb;
+    margin: 10px;
+    padding: 5px 0px;
+    border: solid 3px black;
+    border-radius: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-family: 'Glory', sans-serif;
+}
+
+.recipe h2{
+    text-align: center;
+    font-family: 'Glory', sans-serif;
+    background-color: #e7c8ba;
+    border: solid 2px white;
+    color: #aa646c;
+    width: 70%;
+    padding: 10px 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.link-and-veg{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#veg{
+    color: #958948;
+}
+
+#non-veg{
+    color: rgb(194, 44, 44);
+}
+
+.link-and-veg a{
+    text-decoration: none;
+    color: #7f5b5a;
+}
+
+.link-and-veg a:hover{
+    color: #2b262d;
+}
+
+.recipe button{
+    background-color: #e7c8ba;
+    padding: 2px 4px;
+    color: #aa646c;
+    border: solid 3px #aa646c;
+    margin: 3px;
+    font-size: 0.8em;
+}
+
+.recipe button:hover{
+    background-color: #aa646c;
+    border: solid 3px #e7c8ba;
+    color: #e7c8ba;
+}
+
+.ingredient-list{
+    width: 85%;
+    background-color: #e7c8ba;
+    color: #7f5b5a;
 }
